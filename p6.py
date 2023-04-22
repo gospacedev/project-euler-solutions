@@ -1,12 +1,18 @@
-sum_of_squares = []
-lst = []
+def main():
+    sum_of_squares = []
+    lst = []
 
-for x in range(101):
+    for x in range(101):
 
-    lst.append(x)
+        lst.append(x)
 
-    sum_of_squares.append(pow(x, 2))
+        sum_of_squares.append(pow(x, 2))
 
-square_of_sums = pow(sum(lst), 2)
+    square_of_sums = pow(sum(lst), 2)
 
-print(square_of_sums - sum(sum_of_squares))
+    ans = square_of_sums - sum(sum_of_squares)
+
+    print(ans)
+
+if __name__ == "__main__":
+    main()

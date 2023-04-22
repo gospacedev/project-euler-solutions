@@ -1,7 +1,8 @@
 import math
 
-def prime_factors(n):
+def main():
     factors = []
+    n = 600851475143
 
     while n % 2 == 0:
         factors.append(2)
@@ -15,7 +16,7 @@ def prime_factors(n):
     if n > 2:
         factors.append(n)
     
-    return factors
+    print(factors)
 
 if __name__ == "__main__":
-    print(prime_factors(600851475143))
+    main()
