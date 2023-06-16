@@ -5,7 +5,5 @@ def main():
 		if str(i * j) == str(i * j)[ : : -1])
 	print(ans)
 
-
-
 if __name__ == "__main__":
 	main()
