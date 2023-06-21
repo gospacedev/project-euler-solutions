@@ -13,7 +13,7 @@ func Reverse(s string) string {
     return string(runes)
 }
 
-func main() {
+func p4() int {
 	var maxPalindrome int
 	for i := 100; i < 1000; i++ {
 		for j := 100; j < 1000; j++ {
@@ -25,5 +25,5 @@ func main() {
 			}
 		}
 	}
-	fmt.Println(maxPalindrome)
+	return maxPalindrome
 }

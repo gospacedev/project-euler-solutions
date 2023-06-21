@@ -1,8 +1,6 @@
 package main
 
-import "fmt"
-
-func main() {
+func p2() int {
 	ans := 0
 	x := 1
 	y := 2
@@ -14,5 +12,5 @@ func main() {
 		x, y = y, x+y
 	}
 
-	fmt.Println(ans)
+	return ans
 }

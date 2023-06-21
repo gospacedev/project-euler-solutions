@@ -1,11 +1,10 @@
 package main
 
 import (
-	"fmt"
 	"math"
 )
 
-func main() {
+func p6() int {
 	sumOfSqaures := 0
 	squareOfSums := 0
 
@@ -17,7 +16,7 @@ func main() {
 
 	squareOfSums = int(math.Pow(float64(squareOfSums), 2))
 
-	n := squareOfSums - sumOfSqaures
+	ans := squareOfSums - sumOfSqaures
 
-	fmt.Println(n)
+	return ans
 }

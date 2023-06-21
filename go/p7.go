@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -17,7 +16,7 @@ func isPrime(n int) bool {
 	return true
 }
 
-func main() {
+func p7() []int{
 	primes := []int{}
 	isPrimeCounter := 0
 	for i := 2; ; i++ {
@@ -29,5 +28,5 @@ func main() {
 		}
 	}
 
-	fmt.Println(primes)
+	return primes
 }

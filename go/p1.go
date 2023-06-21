@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func sum(arr []int) int {
     sum := 0
     for _, value := range arr {
@@ -10,7 +8,7 @@ func sum(arr []int) int {
     return sum
 }
 
-func main() {
+func p1() int {
 	var a []int
 
 	for i := 0; i < 1000; i++ {
@@ -21,5 +19,5 @@ func main() {
 
 	ans := sum(a)
 
-	fmt.Println(ans)
+	return ans
 }
