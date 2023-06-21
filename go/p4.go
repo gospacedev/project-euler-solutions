@@ -6,11 +6,15 @@ import (
 )
 
 func Reverse(s string) string {
-    runes := []rune(s)
-    for i, j := 0, len(runes)-1; i < j; i, j = i+1, j-1 {
-        runes[i], runes[j] = runes[j], runes[i]
-    }
-    return string(runes)
+	runes := []rune(s)
+	for i, j := 0, len(runes)-1; i < j; i, j = i+1, j-1 {
+		runes[i], runes[j] = runes[j], runes[i]
+	}
+	return string(runes)
+}
+
+func isIntPalindrome(n int) int {
+	return strings.Compare(fmt.Sprintf("%d", n), Reverse(fmt.Sprintf("%d", n)))
 }
 
 func p4() int {
@@ -18,7 +22,7 @@ func p4() int {
 	for i := 100; i < 1000; i++ {
 		for j := 100; j < 1000; j++ {
 			palindrome := i * j
-			if strings.Compare(fmt.Sprintf("%d", palindrome), Reverse(fmt.Sprintf("%d", palindrome))) == 0 {
+			if isIntPalindrome(palindrome) == 0 {
 				if palindrome > maxPalindrome {
 					maxPalindrome = palindrome
 				}
