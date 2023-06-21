@@ -20,6 +20,4 @@ func main() {
 	n := squareOfSums - sumOfSqaures
 
 	fmt.Println(n)
-	fmt.Println(sumOfSqaures)
-	fmt.Println(squareOfSums)
 }
