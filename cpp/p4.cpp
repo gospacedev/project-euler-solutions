@@ -27,4 +27,6 @@ int main() {
     }
 
     std::cout << max_product;
+
+    return 0;
 }
