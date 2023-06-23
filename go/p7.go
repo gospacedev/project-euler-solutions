@@ -16,7 +16,7 @@ func isPrime(n int) bool {
 	return true
 }
 
-func p7() []int{
+func p7() []int {
 	primes := []int{}
 	isPrimeCounter := 0
 	for i := 2; ; i++ {

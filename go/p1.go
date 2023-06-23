@@ -1,11 +1,11 @@
 package main
 
 func sum(arr []int) int {
-    sum := 0
-    for _, value := range arr {
-        sum += value
-    }
-    return sum
+	sum := 0
+	for _, value := range arr {
+		sum += value
+	}
+	return sum
 }
 
 func p1() int {

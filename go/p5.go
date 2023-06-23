@@ -13,7 +13,7 @@ func lcm(a, b int) int {
 	return a * b / gcd(a, b)
 }
 
-func p5() int{
+func p5() int {
 	smallestMultiple := 1
 	for i := 2; i <= 20; i++ {
 		smallestMultiple = lcm(smallestMultiple, i)
