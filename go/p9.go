@@ -15,6 +15,6 @@ func findPythagoreanTriplet(sum int) (int, int, int) {
 func p9() int {
 	sum := 1000
 	a, b, c := findPythagoreanTriplet(sum)
-    product := a * b * c
-    return product
+	product := a * b * c
+	return product
 }
