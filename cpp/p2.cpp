@@ -1,5 +1,6 @@
 #include <iostream>
 
+// This generates the even-valued Fibonacci sequence terms below four million and adds them all up
 int main(int argc, char const *argv[])
 {
     int x = 1, y = 2, n = 2;
