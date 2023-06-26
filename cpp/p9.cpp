@@ -1,6 +1,6 @@
 #include <iostream>
 
-auto findPythagoreanTriplet(int sum)
+int findPythagoreanTriplet(int sum)
 {
     for (size_t a = 1; a < sum / 3; a++)
     {
