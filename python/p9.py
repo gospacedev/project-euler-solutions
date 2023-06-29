@@ -1,4 +1,4 @@
-def find_pythagorean_triplets(n):
+def find_pythagorean_triplets_product(n):
   for a in range(1, n//3):
     for b in range(a + 1, n//2):
       c = n - a - b
@@ -7,7 +7,7 @@ def find_pythagorean_triplets(n):
 
 
 def main():
-  print(find_pythagorean_triplets(1000))
+  print(find_pythagorean_triplets_product(1000))
 
 
 if __name__ == "__main__":
