@@ -6,7 +6,7 @@ def main():
         if x % 2 == 0:
             ans += x
         x, y = y, x + y
-    print(str(ans))
+    print(ans)
 
 
 if __name__ == "__main__":
