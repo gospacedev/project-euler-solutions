@@ -23,7 +23,7 @@ number_grid_string = """
 01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48
 """
 
-# Remove spaces and newline characters
+#  Remove spaces and newline characters
 number_grid_string = number_grid_string.replace(" ","")
 number_grid_string = number_grid_string.replace("\n","")    
 
@@ -33,6 +33,30 @@ for i in range(1, 800, 2):
     num = number_grid_string[i-1] + number_grid_string[i]
     number_grid.append(int(float(num)))
 
-print(number_grid[128:200:21])
-print(math.prod(number_grid[128:200:21]))
+largest_product = 0
 
+# Vertical
+for i in range(0, 340):
+    current_product = math.prod(number_grid[0+i:80+(20*(i//20)):20])
+    if current_product > largest_product:
+        largest_product = current_product
+
+# Horizotal
+for i in range(0, 397):
+    current_product = math.prod(number_grid[0+i:i+4:1])
+    if current_product > largest_product:
+        largest_product = current_product
+
+# Diagonal left
+for i in range(0, 337):
+    current_product = math.prod(number_grid[i+3:79+(19*(i//19)):19])
+    if current_product > largest_product:
+        largest_product = current_product
+
+# Diagonal right
+for i in range(0, 337):
+    current_product = math.prod(number_grid[i:80+(20*(i//20)):21])
+    if current_product > largest_product:
+        largest_product = current_product
+
+    print(largest_product)
